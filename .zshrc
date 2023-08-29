@@ -12,18 +12,26 @@ alias w='clear && cd ~/Desktop/Workspace'
 alias n='cd ~/Desktop/Notes'
 alias u='cd ~/Desktop/Notes && ./update'
 alias vault='clear && cd ~/Desktop/Workspace/vault-gradle'
-alias t='cd ~/Desktop/Notes/Veeva\ Notes && vim todo.n'
+alias t='cd ~/Desktop/Notes/Veeva\ Notes/Jira\ Notes && vim todo.n'
 alias nvim='./nvim-macos/bin/nvim'
 alias j='cd ~/Desktop/Notes/Veeva\ Notes/Jira\ Notes && . ranger'
 alias tetris='tetris -a -l 1'
 alias pacman='myman'
 alias grep='grep --color'
+alias appsep='ssh -i ~/.ssh/id_rsa_terra ec2-user@appsepvmc.vaultdev.com'
+alias buildNPM='./gradlew :vmc:npmBuild'
+alias hotDeployVMC='./gradlew :vmc:hotDeploy'
+
 
 # export LSCOLORS="cxfxcxdxBxegecabagacad"
 export LSCOLORS="CxfxcxdxBxegecabagacad"
 alias ls='ls --color=auto'
 
 # MATHEW'S FUNCTIONS
+function pcp () {
+	cat $1 | pbcopy
+}
+
 function gitshit() {
 	clear
 	git branch
@@ -100,12 +108,6 @@ prompt=' %{$fg[green]%}$(prompt_git)  %{$fg[cyan]%}%~%{$reset_color%} '
 alias vvlocal='sudo ssh -p 2222 -i ~/.vagrant.d/insecure_private_key root@my.vaultdev.com -L 443:127.0.0.1:8443 -L 80:127.0.0.1:8080 -L 4567:127.0.0.1:4567 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 # My Veeva SSH Aliases/Functions
-function appsep() {
-	SSH_COMMAND='ssh -i ~/.ssh/id_rsa_terra ec2-user@appsepvmc.vaultdev.com'
-	echo $SSH_COMMAND
-	eval $SSH_COMMAND
-}
-
 function appsepJVM() {
 	echo "going into 1019 appsep JVM"
 	SSH_COMMAND='ssh -i ~/.ssh/id_rsa_terra ec2-user@appsepvmc.vaultdev.com'
@@ -157,3 +159,11 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "($pyenv init -)"
 
 eval "$(pyenv init --path)"
+
+# git diff
+export DELTA_PAGER="less --mouse"
+
+# name tabs
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
