@@ -1,0 +1,27 @@
+[user]
+    email = mathew.kramsch@veeva.com
+
+[push]
+    default = upstream
+
+[pull]
+    ff = only
+
+[merge]
+    ff = false
+    conflictstyle = diff3
+
+[core]
+    hooksPath = .githooks
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[diff]
+    colorMoved = default
+
+[delta]
+    navigate = true
+    file-style = bold yellow ul
+    #side-by-side = true
