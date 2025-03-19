@@ -48,8 +48,8 @@ alias gjs='git jstatus'
 alias gc='git checkout'
 alias gcp='git cherry-pick'
 alias gbd='git branch -D'
-alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
-alias gg='git log --graph --abbrev-commit --stat'
+alias gl='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
+alias glg='git log --graph --abbrev-commit --stat'
 
 # export LSCOLORS="cxfxcxdxBxegecabagacad"
 export LSCOLORS="CxfxcxdxBxegecabagacad"
