@@ -654,3 +654,6 @@ set fcs=fold:\ ,vert:\|
 " changes look of vertical splitbar
 set fillchars+=vert:\ 
 highlight VertSplit guibg=#111111 cterm=NONE
+
+" hide empty line chars
+hi NonText guifg=bg

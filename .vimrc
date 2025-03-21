@@ -141,3 +141,6 @@ set fillchars+=vert:\
 highlight VertSplit guibg=#111111 cterm=NONE
 "highlight StatusLineNC guibg=#111111 guifg=#393939 cterm=NONE
 "highlight StatusLine guibg=#111111 guifg=#393939 cterm=NONE
+
+" hide empty line character
+hi NonText guifg=bg

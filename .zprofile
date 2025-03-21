@@ -6,3 +6,4 @@ export JAVA_HOME="$JAVA17_HOME"
 
 alias java8='export JAVA_HOME="$JAVA8_HOME"'
 alias java17='export JAVA_HOME="$JAVA17_HOME"'
+eval "$(/opt/homebrew/bin/brew shellenv)"

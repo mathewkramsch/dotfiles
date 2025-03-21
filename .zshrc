@@ -1,8 +1,6 @@
 # ~/.zshrc
 
-source ~/.serveraccessrc
-
-APPSEP_POD=1018
+#source ~/.serveraccessrc
 
 # MATHEW'S ALIASES
 alias r='. ranger'
@@ -36,9 +34,6 @@ alias vhd2='./gradlew :vmc:hotDeploy -PhotDeploy.pvm'
 #alias vhd='./gradlew :vmc:npmBuild && ./gradlew :vmc:hotDeploy'
 alias cf='caffeinate -ds'
 alias yabai-restart='yabai --restart-service && sketchybar --reload'
-
-alias av1="assh appsep_${APPSEP_POD}_vault_1"
-alias av2="assh appsep_${APPSEP_POD}_vault_2"
 
 # Git shortcut aliases
 alias b='git branch'
@@ -129,6 +124,7 @@ export VISUAL=vim
 export EDITOR=vim
 
 # for gruvbox colors
+export PATH="/opt/homebrew/bin:$PATH"
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette.sh"
 
 # italics?
@@ -245,3 +241,4 @@ function diff {
 		git diff
 	fi
 }
+

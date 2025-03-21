@@ -28,7 +28,7 @@ sketchybar --bar height=42        \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-sketchybar --default label.font.family="SF Mono"            \
+sketchybar --default label.font.family="Liga SFMono Nerd Font"            \
                      label.color=0xffffffff                \
                      icon.color=0xffffffff                 \
                      padding_left=10                        \
@@ -47,7 +47,7 @@ sketchybar --default label.font.family="SF Mono"            \
                      background.padding_right=20
 
 sketchybar --add item apple left                              \
-           --set apple   icon=􀣺 \
+           --set apple   icon= \
                          icon.padding_right=-4  \
                          background.padding_right=10 \
                          background.padding_left=0
@@ -141,14 +141,14 @@ sketchybar --add item front_app left                                    \
 
 sketchybar --add item clock right                              \
            --set clock   update_freq=10                        \
-                         icon=􀐫                                \
+                         icon=                              \
                          script="$PLUGIN_DIR/clock.sh"         \
                          background.padding_left=5             \
                          background.padding_right=0            \
                                                                \
            --add item date right                               \
            --set date   update_freq=120                        \
-                        icon=􀉉                                 \
+                        icon=                                 \
                         script="$PLUGIN_DIR/date.sh"           \
                         background.padding_right=5            \
                         background.padding_left=5             \
