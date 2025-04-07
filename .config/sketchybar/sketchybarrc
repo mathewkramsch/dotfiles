@@ -48,7 +48,7 @@ sketchybar --default label.font.family="Liga SFMono Nerd Font"            \
 
 sketchybar --add item apple left                              \
            --set apple   icon= \
-                         icon.padding_right=-4  \
+                         icon.padding_right=-6  \
                          background.padding_right=10 \
                          background.padding_left=0
 

@@ -1,18 +1,18 @@
 [user]
-    email = mathew.kramsch@veeva.com
+	email = mathew.kramsch@veeva.com
 
 [push]
-    default = upstream
+	default = upstream
 
 [pull]
-    ff = only
+	ff = only
 
 [merge]
-    ff = false
+	ff = false
     conflictstyle = diff3
 
 [core]
-    hooksPath = .githooks
+	hooksPath = .githooks
     pager = delta
 
 [interactive]

@@ -21,9 +21,9 @@ case ${PERCENTAGE} in
 esac
 
 if [[ $AC_BUT_NOT_CHARGING != "" ]]; then
-  ICON="󰂄"
+  ICON="󱐋"
 elif [[ $CHARGING != "" ]]; then
-  ICON="󰂄"
+  ICON="󱐋"
 fi
 
 # The item invoking this script (name $NAME) will get its icon and label
