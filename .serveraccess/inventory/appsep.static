@@ -1,0 +1,14 @@
+[APPSEP_AUTH:children]
+appsep_auth
+
+[appsep_auth]
+appsepvmc.vaultdev.com
+
+[APPSEP_AUTH:vars]
+svr_type = auth
+
+[APPSEP_VMC:children]
+appsep_vmc
+
+[appsep_vmc]
+appsepvmc.vaultdev.com

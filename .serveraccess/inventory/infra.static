@@ -1,0 +1,14 @@
+[INFRA_AUTH:children]
+infra_auth
+
+[infra_auth]
+infralogin.vaultdev.com
+
+[INFRA_AUTH:vars]
+svr_type = auth
+
+[INFRA_VMC:children]
+infra_vmc
+
+[infra_vmc]
+infravmc.vaultdev.com
